@@ -1,0 +1,499 @@
+{
+    "#comment": "Modern 1",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "[Coin edition]",
+                "FirstRewardParam": "goldbloom",
+                "FirstRewardType": "unlock_plant",
+                "GameFeaturesToUnlock": [
+                    "feature_almanac",
+                    "feature_plantfood_purchase"
+                ],
+                "LevelNumber": 1,
+                "ForceToWorldMap": true,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(PlantfoodTutorial@CurrentLevel)",
+                    "RTID(DefaultSunDropper@LevelModules)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(TutorialPeashooterDeath@LevelModules)",
+                    "RTID(ModernMowers@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)"
+                ],
+                "Name": "[Coin edition]",
+                "NormalPresentTable": "egypt_normal_01",
+                "RepeatPlayForceToWorldMap": false,
+                "ShinyPresentTable": "egypt_shiny_01",
+                "StageModule": "RTID(ModernStage@LevelModules)",
+                "SuppressDynamicTutorial": true
+            }
+        },
+        {
+            "aliases": [
+                "PlantfoodTutorial"
+            ],
+            "objclass": "PlantfoodTutorialIntroProperties",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "SelectionMethod": "chooser"
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "MinNextWaveHealthPercentage": 0.1,
+                "MaxNextWaveHealthPercentage": 0.1,
+                "FlagWaveInterval": 9,
+                "WaveCount": 9,
+                "WaveSpendingPointIncrement": 40,
+                "WaveSpendingPoints": 100,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9@CurrentLevel)"
+                    ]
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave2"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave3"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave4"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave5"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave6"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave7"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave8"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave9"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(treasureyeti@ZombieTypes)"
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}
